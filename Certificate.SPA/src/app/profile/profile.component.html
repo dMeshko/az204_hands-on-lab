@@ -1,0 +1,14 @@
+<div>
+    <p><strong>First Name: </strong> {{profile?.givenName}}</p>
+    <p><strong>Last Name: </strong> {{profile?.surname}}</p>
+    <p><strong>Email: </strong> {{profile?.userPrincipalName}}</p>
+    <p><strong>Id: </strong> {{profile?.id}}</p>
+</div>
+
+<div>
+    <h3>ID Token claims</h3>
+    <p><strong>Full name: </strong> {{ tokenClaims.name }} </p>
+    <p><strong>Country: </strong> {{ tokenClaims.ctry }} </p>
+    <p><strong>Groups: </strong> {{ tokenClaims.groups?.join(", ") ?? '-' }} </p>
+    <!-- {{ getGroupName(tokenClaims.groups[0]) | async }} -->
+</div>
