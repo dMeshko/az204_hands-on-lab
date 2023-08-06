@@ -4,10 +4,10 @@ using Microsoft.Identity.Web.Resource;
 
 namespace Certificate.API.Controllers;
 
-[Authorize]
+[Authorize(Roles = "Developer")]
 [ApiController]
 [Route("[controller]")]
-[RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
+[RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes:Write")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
