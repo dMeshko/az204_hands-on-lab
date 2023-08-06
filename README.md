@@ -1,9 +1,11 @@
 # Az204 hands-on lab
 
 ## Architecture
+
 DIAGRAM GOES HERE
 
 ## Business requirements
+
 - The connection string for Cosmos needs to be stored in Key Vault
 - The costs for the storage account must be minimized
 - The consistency level of CosmosDB is set to **Strong**, but for the following scenarios it needs to be cost-optimized to accomodate for the following scenarios:
@@ -21,6 +23,7 @@ DIAGRAM GOES HERE
 ## Solution
 
 ### 1. Upload your applications to Azure
+
 BLABLA
 
 ---
@@ -28,16 +31,17 @@ BLABLA
 ### 2. Register your applications with Azure AD (AAD)
 
 #### Certificate.API
+
 ![Registering the scopes for the Certificate.API](docs/image-3.png)
 ![Registering the roles for the Certificate.API](docs/image-4.png)
 ![Role assignment for the Certificate.API](docs/image-7.png)
 
 #### Certificate.SPA
+
 ![ID token configuration for the Certificate.SPA](docs/image-5.png)
 ![Requesting for the scopes for the Certificate.SPA](docs/image-6.png)
 
 ---
-
 
 ### 3. Configure your applications to authenticate & authorize with AAD
 
